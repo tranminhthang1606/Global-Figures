@@ -28,6 +28,13 @@ box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.25);
     
 }
 
+.title-slide1 {
+    color: orange;
+    position: absolute;
+    left: 650px;
+    top: 584px;
+}
+
 
 .logo {
     position: absolute;
