@@ -9,7 +9,7 @@ body{
     position: relative;
     width: 1440px;
     background-repeat: no-repeat;
-    background-image: url(/img/back.jpg);
+    background-image: url(img/back.jpg);
     background-size: cover;
     height: 4360px;
     
