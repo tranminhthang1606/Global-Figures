@@ -1,49 +1,57 @@
-let SlideIndex = 1;
-showSlides(SlideIndex);
+let MenuItem = document.getElementById("Menu-item");
+MenuItem.style.maxHeight = "0px";
 
-
-function plusSlide(n) {
-    showSlides(SlideIndex += n);
-};
-
-function currentSlide(n) {
-    showSlides(SlideIndex = n);
-};
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("product1");
-    if (n > slides.length) (SlideIndex = 1);
-    if (n < 1) (SlideIndex = slides.length);
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+function MenuToggle() {
+    if (MenuItem.style.maxHeight == "0px") {
+        MenuItem.style.maxHeight = "200px"
     }
-     
-    slides[SlideIndex - 1].style.display = "block";
+    else {
+        MenuItem.style.maxHeight = "0px"
+    }
 }
 
-let SlideIndex2 = 1;
-showSlides2(SlideIndex2);
 
 
-function plusSlide2(n) {
-    showSlides2(SlideIndex2 += n);
-};
 
-function currentSlide2(n) {
-    showSlides2(SlideIndex2 = n);
-};
+var Loginform = document.getElementById("Loginform");
+var Regform = document.getElementById("Registerform");
+var line = document.getElementById("line");
 
-function showSlides2(n) {
-  let i;
-  let slides2 = document.getElementsByClassName("product2");
-  if (n > slides2.length) SlideIndex2 = 1;
-  if (n < 1) SlideIndex2 = slides2.length;
-
-  for (i = 0; i < slides2.length; i++) {
-    slides2[i].style.display = "none";
-  }
-
-  slides2[SlideIndex2 - 1].style.display = "block";
+function register() {
+  Loginform.style.transform = 'translateX(0px)';
+    Regform.style.transform = 'translateX(0px)';
+    line.style.transform = 'translateX(100px)';
 }
+
+function login() {
+  Loginform.style.transform = "translateX(300px)";
+    Regform.style.transform = "translateX(300px)";
+    line.style.transform = "translateX(0px)";
+}
+
+let typed = new Typed(".auto-input", {
+  strings: ["Global Figures", "1ST Figures Store", "Selling With Heart"],
+  typeSpeed: 50,
+  backSpeed: 50,
+  loop: true
+})
+
+
+
+
+let productImg = document.getElementById("productImg");
+let smallimg = document.getElementsByClassName("small-img");
+
+smallimg[0].onclick = function () {
+  productImg.src = smallimg[0].src;
+};
+smallimg[1].onclick = function () {
+  productImg.src = smallimg[1].src;
+};
+smallimg[2].onclick = function () {
+  productImg.src = smallimg[2].src;
+};
+smallimg[3].onclick = function () {
+  productImg.src = smallimg[3].src;
+};
+

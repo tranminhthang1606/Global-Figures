@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Figure</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/banner-logo.png" width="200px" alt="" />
+        </div>
+        <nav>
+          <ul id="Menu-item">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="sanpham.html">Sản phẩm</a></li>
+            <li><a href="">Liên hệ</a></li>
+            <li><a href="login-register.html">Tài khoản</a></li>
+          </ul>
+        </nav>
+        <img
+          src="icon/cart.png"
+          width="50px"
+          style="margin-bottom: 20px"
+          alt=""
+        />
+        <img
+          class="menu-icon"
+          src="icon/menu.png"
+          onclick="MenuToggle()"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                  <img src="img/BlackGoku copy.png" width="100%" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                         <div class="form-btn">
+                             <span onclick="login()" >Đăng nhập</span>
+                             <span onclick="register()">Đăng ký</span>
+                             <hr id="line">
+                         </div>
+                         <form id="Loginform">
+                             <input type="text" placeholder="Tên Đăng Nhập">
+                             <input type="password" placeholder="Mật khẩu">
+                             <button class="btn" type="submit">Đăng nhập</button>
+                             <a href="" style="color: seashell;">Quên mật khẩu</a>
+                         </form>
+                         <form id="Registerform">
+                             <input type="text" placeholder="Tên Đăng Nhập">
+                             
+                             <input type="email" placeholder="Email">
+                             <input type="password" placeholder="Password">
+                             <button class="btn" type="submit">Register</button>
+                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="footer">
+      <div class="blog-container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Tải ứng dụng</h3>
+            <p>Tải ứng dụng trên AppStore và CHPlay</p>
+            <div class="app-logo">
+              <img src="icon/app-store.png" alt="" />
+              <img src="icon/play-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="img/banner-logo.png" width="200px" alt="" />
+            <p>Đặt tâm huyết vào từng sản phẩm</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Điều khoản</h3>
+            <ul>
+              <li>Mã giảm giá</li>
+              <li>Blog</li>
+              <li>Policy</li>
+              <li>Tuyên thệ</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Theo dõi chúng tôi</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Công ty - Tập đoàn TMT - 2021</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
