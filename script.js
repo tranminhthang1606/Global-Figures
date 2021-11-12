@@ -29,8 +29,6 @@ function login() {
     line.style.transform = "translateX(0px)";
 };
 
-
-
 let productImg = document.getElementById("productImg");
 let smallimg = document.getElementsByClassName("small-img");
 
@@ -46,4 +44,5 @@ smallimg[2].onclick = function () {
 smallimg[3].onclick = function () {
   productImg.src = smallimg[3].src;
 };
+
 
