@@ -102,7 +102,7 @@ a{
 .col-4 img {
   width: 100%;
   border-radius: 10px;
- 
+  cursor: pointer;
   
 }
 
@@ -345,6 +345,15 @@ small{
   }
   .logo img {
     width: 170px;
+  }
+  .header .col-2 span{
+    display: none;
+    
+  }
+  .header .col-2 p{
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
   }
   
 }
