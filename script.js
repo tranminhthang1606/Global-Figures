@@ -27,15 +27,7 @@ function login() {
   Loginform.style.transform = "translateX(300px)";
     Regform.style.transform = "translateX(300px)";
     line.style.transform = "translateX(0px)";
-}
-
-let typed = new Typed(".auto-input", {
-  strings: ["Global Figures", "1ST Figures Store", "Selling With Heart"],
-  typeSpeed: 50,
-  backSpeed: 50,
-  loop: true
-})
-
+};
 
 
 
