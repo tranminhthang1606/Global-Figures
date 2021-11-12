@@ -341,6 +341,10 @@ small{
     cursor: pointer;
     
     
+    
+  }
+  .logo img {
+    width: 170px;
   }
   
 }
