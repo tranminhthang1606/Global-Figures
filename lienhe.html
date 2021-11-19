@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Figure</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0243730316.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/banner-logo.png" width="200px" alt="" />
+        </div>
+        <nav>
+          <ul id="Menu-item">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="sanpham.html">Sản phẩm</a></li>
+            <li><a href="lienhe.html" class="Main">Liên hệ</a></li>
+            <li><a href="login-register.html">Tài khoản</a></li>
+          </ul>
+        </nav>
+        <a href="giohang.html"
+          ><img
+            src="icon/cart.png"
+            width="50px"
+            style="margin-bottom: 20px"
+            alt=""
+        /></a>
+        <img
+          class="menu-icon"
+          src="icon/menu.png"
+          onclick="MenuToggle()"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="container contact">
+      <h3>Liên hệ với chúng tôi</h3>
+      <div class="row">
+        <div class="col-2 text-info">
+          <div class="text-info-1">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>7/244 Hoàng Hoa Thám , Ba Đình , Hà Nội</span>
+          </div>
+
+          <div class="text-info-1">
+            <i class="fas fa-envelope"></i>
+            <span>TMT@gmail.com</span>
+          </div>
+
+          <div class="text-info-1">
+            <i class="fas fa-phone-alt"></i>
+            <span>0876489234 / 09764887342</span>
+          </div>
+        </div>
+        <div class="col-2 map-info">
+          <h2>Cửa hàng trưng bày</h2>
+          <p>
+            <iframe
+              id="Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.762148252656!2d105.81583931447639!3d21.042200985991116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab0e3278ed43%3A0x6b2795c6dab6f89c!2zMjQ0IEhvw6BuZyBIb2EgVGjDoW0sIFRodeG7tSBLaHXDqiwgQmEgxJDDrG5oLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1636988688203!5m2!1svi!2s"
+              width="650"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </p>
+        </div>
+      </div>
+
+      <h2 style="text-align: center; margin: 50px;color: orange;">Nhắn gửi tới chúng tôi</h2>
+
+      
+      <div class="row feedback-form">
+          
+          <div class="col-3">
+              <input type="text" placeholder="Họ và tên" >
+          </div>
+          <div class="col-3">
+              <input type="email" placeholder="Email">
+          </div>
+          <div class="col-3">
+              <input type="text" placeholder="Số điện thoại">
+          </div>
+          
+      </div>
+      <div class="row message">
+        <div class="col-2">
+          <input type="text" placeholder="Tin nhắn">
+          <div style="text-align: center;margin: 20px;">
+            <button class="btn1" style="font-size: 16px;font-weight: bold;">Gửi tin nhắn</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <div class="blog-container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Tải ứng dụng</h3>
+            <p>Tải ứng dụng trên AppStore và CHPlay</p>
+            <div class="app-logo">
+              <img src="icon/app-store.png" alt="" />
+              <img src="icon/play-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="img/banner-logo.png" width="200px" alt="" />
+            <p>Đặt tâm huyết vào từng sản phẩm</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Liên hệ</h3>
+            <ul>
+              <a href=""
+                ><h4>Địa chỉ: 7/244 Hoàng Hoa Thám , Ba Đình ,Hà Nội</h4></a
+              >
+              <a href=""><h4>Email: TMT@gmail.com</h4></a>
+              <a href=""><h4>SĐT: 0876489234 / 09764887342</h4></a>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Theo dõi chúng tôi</h3>
+            <ul>
+              <a href=""><img src="icon/facebook-icon.png" alt="" /></a>
+              <a href=""><img src="icon/instagram-icon.png" alt="" /></a>
+              <a href=""><img src="icon/twitter-icon.png" alt="" /></a>
+              <a href=""><img src="icon/youtube-icon.png" alt="" /></a>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Công ty - Tập đoàn TMT - 2021</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
