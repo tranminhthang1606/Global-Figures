@@ -116,9 +116,10 @@ a{
 }
 
 .col-4 img {
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
   cursor: pointer;
+  max-height: 250px;
   
 }
 
@@ -245,6 +246,7 @@ small{
   cursor: pointer;
   text-align: center;
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  height: 300px;
 }
 
 .feedback .col-3:hover{
@@ -507,7 +509,7 @@ small{
   
   
   #chooseSize{
-    margin-left: 50px;
+    margin-left: 75px;
   }
   
   .side-bar{

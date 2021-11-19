@@ -29,39 +29,11 @@ function login() {
     line.style.transform = "translateX(0px)";
 };
 
-let sub = document.getElementById("sub");
-let add = document.getElementById("add");
-let val = document.getElementById("val");
 
-add.addEventListener("click", function() {
-  val.value = parseInt(val.value) + 1;
-});
-
-sub.addEventListener("click", function() {
-  if (val.value <= 1) {
-    val.value = parseInt(val.value);
-  } else {
-    val.value = parseInt(val.value) - 1;
-  }
-});
 
 
  
 
-let productImg = document.getElementById("productImg");
-let smallimg = document.getElementsByClassName("small-img");
 
-smallimg[0].onclick = function () {
-  productImg.src = smallimg[0].src;
-};
-smallimg[1].onclick = function () {
-  productImg.src = smallimg[1].src;
-};
-smallimg[2].onclick = function () {
-  productImg.src = smallimg[2].src;
-};
-smallimg[3].onclick = function () {
-  productImg.src = smallimg[3].src;
-};
 
 
