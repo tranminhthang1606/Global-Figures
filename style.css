@@ -482,9 +482,12 @@ small{
   }
   .cart-info h4{
   margin-top: 0px;
+
   
 }
-  
+.feedback-form{
+  margin-left: 0;
+}  
 }
 
   
