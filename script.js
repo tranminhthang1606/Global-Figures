@@ -29,6 +29,9 @@ function login() {
     line.style.transform = "translateX(0px)";
 };
 
+function thongbao() {
+  alert("Cảm ơn quý khách đã mua hàng !!")
+}
 
 
 
