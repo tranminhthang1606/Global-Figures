@@ -46,7 +46,7 @@ a {
 .row {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
 }
 .col-2 {
@@ -63,7 +63,7 @@ a {
   background-color: orange;
 
   padding: 5px 10px;
-  transition: background 1s;
+  transition: background 0.5s;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
@@ -74,7 +74,7 @@ a {
   background-color: orange;
 
   padding: 10px 50px;
-  transition: background 1s;
+  transition: background 0.5s;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
@@ -103,11 +103,19 @@ a {
   text-align: center;
 }
 
+.small-container .col-4{
+  margin: 30px 30px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+ 
+
+}
+
 .col-4 img {
   width: 90%;
   border-radius: 10px;
   cursor: pointer;
-  max-height: 250px;
+  max-height: 200px;
 }
 
 .small-container {
@@ -276,6 +284,7 @@ small {
 }
 .footer-col-2 img {
   margin-bottom: 20px;
+  width: 250px;
 }
 .footer-col-3 a h4:hover {
   color: white;
@@ -291,7 +300,9 @@ small {
 .footer-col-3 {
   margin-right: 50px;
 }
-
+.footer-col-3 h3{
+  margin-left: 40px;
+}
 .app-logo {
   margin-top: 20px;
 }
@@ -336,10 +347,10 @@ small {
 
 .contact .col-2 i {
   color: orange;
-  font-size: 40px;
+  font-size: 25px;
 }
 .text-info-1 {
-  margin: 80px 50px;
+  margin: 40px 50px;
 }
 
 .contact .col-2 span {
@@ -386,6 +397,10 @@ small {
 
 .feedback-form {
   margin-left: 100px;
+}
+#filter{
+  box-shadow: 0 0 0px 2px rgba(248, 121, 2, 0.973);
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -436,6 +451,7 @@ small {
 @media only screen and (max-width: 600px) {
   .row {
     text-align: center;
+    flex-wrap: wrap;
   }
   .col-2,
   .col-3,
@@ -479,6 +495,17 @@ small {
   .map-info {
     margin-top: 30px;
   }
+  .mobile{
+    display: none;
+  }
+
+  .small-container .col-4{
+  margin: 20px 0px;
+  
+  
+ 
+
+}
 }
 
 .row-2 {
@@ -643,12 +670,10 @@ th:last-child {
   text-align: right;
 }
 
-.account-page {
-  padding: 80px 0;
-}
+
 
 .form-container {
-  background-image: url(img/login-regis\ 1.png);
+  background: white;
   width: 300px;
   height: 400px;
   background-size: cover;
@@ -677,7 +702,7 @@ th:last-child {
   max-width: 300px;
   padding: 0 20px;
   position: absolute;
-  top: 130px;
+  top: 100px;
   transition: transform 1s;
 }
 form input {
@@ -693,6 +718,7 @@ form .btn {
   border: none;
   cursor: pointer;
   margin: 10px 0;
+  font-weight: bold;
 }
 
 form .btn:focus {
